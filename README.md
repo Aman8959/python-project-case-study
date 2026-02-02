@@ -1,70 +1,132 @@
-Policyholder Data Correction & Claim Calculation (NumPy + Pandas)
-📌 Project Description
+# Policy Holders Analyst
 
-This project uses NumPy and Pandas to manage and correct insurance policyholder data.
-It displays the original policy data, fixes an error by swapping two columns, and then calculates the total claim amount from all policyholders.
+A Python-based application for analyzing insurance policy holder data using Pandas and NumPy.
 
-✅ Features
+---
 
-Stores policyholder information in a NumPy 2D array
+## 📋 Overview
 
-Converts the data into a Pandas DataFrame for better readability
+This application analyzes insurance policy holder information, including premium amounts, insured amounts, and claim amounts. It uses NumPy for data manipulation and Pandas for displaying data in a structured tabular format.
 
-Swaps Premium Amount and Claim Amount columns to correct the dataset
+---
 
-Calculates the total claim amount using NumPy
+## ✨ Features
 
-🛠 Technologies Used
+- Load policy holder data from NumPy arrays
+- Display policy information in professional tabular format using Pandas
+- Analyze premium amounts and claim amounts
+- Perform data manipulation and analysis
+- Calculate statistics on policy data
 
-Python
+---
 
-NumPy
+## 📊 Data Structure
 
-Pandas
+The policy holder data includes:
 
-📦 Installation
+| Column | Description | Type |
+|--------|-------------|------|
+| Policy Number | Unique identifier for each policy | Integer |
+| Premium Amount | Annual premium paid | Float |
+| Insured Amount | Coverage amount | Float |
+| Claim Amount | Amount claimed | Float |
 
-Install the required libraries using:
+**Sample Data:**
+```
+Policy 1001: Premium ₹12,000, Insured ₹50,000, Claim ₹5,000
+Policy 1002: Premium ₹15,000, Insured ₹60,000, Claim ₹6,000
+Policy 1003: Premium ₹13,000, Insured ₹55,000, Claim ₹5,500
+Policy 1004: Premium ₹16,000, Insured ₹70,000, Claim ₹7,000
+Policy 1005: Premium ₹14,000, Insured ₹65,000, Claim ₹6,500
+```
 
+---
+
+## 🛠️ Requirements
+
+- **Python:** 3.x or higher
+- **NumPy:** For numerical computations
+- **Pandas:** For data manipulation and analysis
+
+### Installation:
+
+```bash
 pip install numpy pandas
+```
 
-📊 Data Format
+---
 
-The dataset contains the following columns:
+## 🚀 How to Run
 
-Column Name	Description
-Policy Number	Unique policy ID
-Premium Amount	Amount paid as premium
-Insured Amount	Total insured value
-Claim Amount	Amount claimed by the policyholder
-⚙️ How the Code Works
-1. Create the Policyholder Data
+```bash
+python policy_holders_analyst.py
+```
 
-The data is stored as a NumPy array.
+---
 
-2. Display Original Data
+## 💻 Usage
 
-The array is converted into a Pandas DataFrame and printed in table format.
+Simply run the script to:
+1. Load policy holder data
+2. Display original data in tabular format
+3. Perform data analysis and manipulation
+4. Output processed results
 
-3. Correct the Data by Swapping Columns
+---
 
-The program swaps the Premium Amount and Claim Amount columns to fix incorrect values.
+## 📈 Output
 
-4. Display Corrected Data
+The application displays:
+- Original policy holder DataFrame with all columns
+- Analyzed data with performed transformations
+- Statistics on premium and claim amounts
 
-After swapping, the updated data is displayed again using Pandas.
+---
 
-5. Calculate Total Claim Amount
+## 🔧 Technical Implementation
 
-Finally, the code calculates the total claim amount of all policyholders using NumPy's sum function.
+- **Data Source:** NumPy arrays
+- **Data Processing:** NumPy operations
+- **Data Display:** Pandas DataFrame
+- **Analysis:** Statistical computations
 
-✅ Output
+---
 
-The program prints:
+## 📝 Notes
 
-Original policyholder data
+- Policy Numbers must be unique
+- All monetary values are stored as floats
+- Data is processed in memory
+- Results are displayed in tabular format for easy reading
 
-Corrected policyholder data (after swapping)
+---
 
-Total claim amount from all policyholders
+## 🤝 Contributing
 
+Contributions are welcome! Feel free to:
+- Fork the repository
+- Create feature branches
+- Submit pull requests for improvements
+- Report issues and bugs
+
+---
+
+## 📄 License
+
+This project is open source and available for educational purposes.
+
+---
+
+## 👨‍💻 Author
+
+Aman8959
+
+---
+
+## 🔗 Repository
+
+GitHub: [python-project-case-study](https://github.com/Aman8959/python-project-case-study)
+
+## License
+
+This project is open-source and available under the MIT License.
